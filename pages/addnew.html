@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/global.css">
+    <link rel="stylesheet" href="../style/addnew.css">
+    <script defer src="../script/addnew.js"></script>
+    <title>dashboard</title>
+</head>
+
+<body>
+    <div class="main">
+        <h2>Adicionar novo: </h2>
+        <div class="botoes">
+            <button id="empresa" onclick="showEmpresa()">Empresa</button>
+            <button id="produto" onclick="showProduto()">Produto</button>
+        </div>
+    </div>
+    <div class="add_empresa hidden">
+        <h2>Adicionar Empresa:</h2>
+        <form>
+            <label for="empresa_foto">Foto(url), vazio = cinza:</label>
+            <input type="url" name="empresa_foto" id="empresa_foto">
+            <label for="empresa_nome">Nome:</label>
+            <input required type="text" name="empresa_nome" id="empresa_nome">
+            <label for="empresa_rating">Rating(0-5):</label>
+            <input required step="1" min="0" max="5" type="number" name="empresa_rating" id="empresa_rating">
+            <button onclick="submitEmpresa" type="submit">Cadastrar</button>
+        </form>
+    </div>
+    <div class="add_produto hidden">
+        <h2>Adicionar Produto:</h2>
+        <form>
+            <label for="empresa_foto">Foto(url), vazio = cinza:</label>
+            <input type="url" name="empresa_foto" id="empresa_foto">
+            <label for="empresa_nome">Nome:</label>
+            <input required type="text" name="empresa_nome" id="empresa_nome">
+            <label for="empresa_preco">Preço(R$):</label>
+            <input required min="0" type="number" name="empresa_preco" id="empresa_preco">
+            <label for="empresa_rating">Rating(0-5):</label>
+            <input required step="1" min="0" max="5" type="number" name="empresa_rating" id="empresa_rating">
+            <button onclick="submitProduto()" type="submit">Cadastrar</button>
+        </form>
+    </div>
+</body>
+
+</html>
