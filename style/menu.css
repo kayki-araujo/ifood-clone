@@ -1,0 +1,65 @@
+body {
+    overflow: hidden;
+}
+
+header {
+    display: grid;
+    position: sticky;
+    top: 0;
+    background-color: var(--main-red);
+    height: 10vh;
+    box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.2);
+}
+
+header .logo {
+    margin: auto;
+    height: 6vh;
+}
+
+iframe {
+    height: 80vh;
+    width: 100vw;
+    margin: 0;
+}
+
+footer {
+    position: sticky;
+    bottom: 0;
+    background-color: var(--main-red);
+    height: 10vh;
+    box-shadow: 0 -2px 4px 1px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    height: 100%;
+    width: 100%;
+}
+
+nav ul {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+}
+
+nav ul li {
+    display: grid;
+    all: unset;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+nav ul li button {
+    margin: auto;
+    cursor: pointer;
+    background-color: unset;
+    border: unset;
+    height: 100%;
+    width: 100%;
+}
+
+nav ul li button i {
+    color: white;
+    font-size: 5vh;
+}
